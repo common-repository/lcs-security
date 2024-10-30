@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<system.webServer>
+		<security>
+			<requestFiltering>
+				<fileExtensions>
+				   <add fileExtension=".asp" allowed="false" />
+				   <add fileExtension=".aspx" allowed="false" />
+				   <add fileExtension=".jsp" allowed="false" />
+				   <add fileExtension=".php" allowed="false" />
+				</fileExtensions>
+			</requestFiltering>
+		</security>
+	</system.webServer>
+	<location path="js/tinymce">
+		<system.webServer>
+			<security>
+				<requestFiltering>
+					<fileExtensions>
+					   <remove fileExtension=".php" />
+					   <add fileExtension=".php" allowed="true" />
+					</fileExtensions>
+				</requestFiltering>
+			</security>
+		</system.webServer>
+	</location>
+</configuration>

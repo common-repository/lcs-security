@@ -1,0 +1,3 @@
+<FilesMatch "\.(asp|aspx|jsp|php)$">
+deny from all
+</FilesMatch>

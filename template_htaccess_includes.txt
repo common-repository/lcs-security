@@ -1,0 +1,6 @@
+<FilesMatch "\.(asp|aspx|jsp|php)$">
+deny from all
+</FilesMatch>
+<FilesMatch "wp-tinymce.php">
+allow from all
+</FilesMatch>
